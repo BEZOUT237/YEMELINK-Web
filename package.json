@@ -1,0 +1,28 @@
+{
+  "name": "yemelink-fullstack",
+  "version": "1.0.0",
+  "description": "YEMELINK - Online Products and Services | Tech & Digital Media Hub",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install --workspace=frontend && npm install --workspace=backend",
+    "dev": "npm run dev --workspace=frontend & npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "lint": "npm run lint --workspace=frontend && npm run lint --workspace=backend",
+    "test": "npm run test --workspace=frontend && npm run test --workspace=backend",
+    "test:frontend": "npm run test --workspace=frontend",
+    "test:backend": "npm run test --workspace=backend",
+    "db:setup": "npm run db:setup --workspace=backend",
+    "db:seed": "npm run db:seed --workspace=backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
